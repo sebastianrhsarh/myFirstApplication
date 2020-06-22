@@ -1,0 +1,84 @@
+.clearfix{
+  float: none;
+  clear: both;
+}
+
+body{
+  background: url("http://3.bp.blogspot.com/-AqwK3xN7TI4/Veue9c-g3XI/AAAAAAAAAFI/5ClFROBz2KA/s1600-r/fondos%2Banimados2_zpsdbpvulbd.gif");
+  background-attachment: fixed;
+}
+
+#global{
+  width: 65%;
+  margin: 0px auto;
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 0px 2px #ccc;
+}
+
+#logo{
+  font-size: 30px;
+  letter-spacing: 4px;
+  background: rgb(72, 80, 202);
+  color: rgb(14, 0, 0);
+  text-align: center;    
+}
+
+#menu{
+  font-family: Helvetica, Arial;
+  background: rgb(134, 130, 143);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#menu ul{
+  line-height: 46px;
+  list-style: none;
+}
+
+#menu ul li{
+  height: 46px;
+  display: inline-block;
+  transition: all 300ms;
+}
+
+#menu ul li:hover{
+  background: rgb(72, 80, 202);
+}
+
+#menu a{
+  display: block;
+  color:white;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#posts{
+  width: 60%;
+  float: left;
+  font-family: helvetica, Arial;
+
+}
+
+.post h2{
+  font-size: 40px;
+}
+
+.post .date{
+  display: block;
+  color: grey;
+  
+}
+
+.post p{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.pagination{
+text-align: center
+}
+

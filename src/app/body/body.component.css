@@ -1,0 +1,60 @@
+#posts{
+  width: 100%;
+  float: left;
+  font-family: helvetica, Arial;
+}
+
+.post h2{
+  font-size: 40px;
+  text-align: center;
+}
+
+.post .date{
+  display: block;
+  color: grey;
+}
+
+.post p{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.description-input{
+  text-align: center;
+}
+
+.wrap {
+  border: 2px groove rgb(190, 187, 187);
+  padding: 24px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.description-input{
+  float: left;
+  width : 150px;
+  margin: 0;
+  position: static;
+  margin-left: 20mm;
+  margin-right: 10mm;
+  text-align: center;
+}
+
+.location-input{
+  float: left;
+  position: relative;
+  margin-left: 10mm;
+}
+
+.full-time{
+  float: left;
+  position: relative;
+  margin-left: 20mm;
+}
+
+.search-button{
+  float: left;
+  position: right;
+  margin-left: 20mm;
+}

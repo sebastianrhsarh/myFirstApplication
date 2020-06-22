@@ -1,0 +1,42 @@
+<div id="posts">
+  <article class="post">
+    <h2>Busquemos que trabajos disponibles</h2>
+    <div class="search-inputs">
+      <div class="description-input">
+        <nz-input-group>
+          <input type="text"  placeholder=" Descripción del trabajo" [(ngModel)]="description" />
+        </nz-input-group>
+      </div>
+      <div class="location-input">
+        <nz-input-group>
+          <input type="text" placeholder=" ¿Donde quieres trabajar?" [(ngModel)]="location" />
+        </nz-input-group>
+      </div>
+      <div class="full-time">
+        <label nz-checkbox [(ngModel)]="fullTime">Full Time</label>
+      </div>
+      <div class="search-button">
+        <button nz-button nzType="primary" (click)="search()"><i nz-icon nzType="search"></i>Buscar</button>
+      </div>
+    </div>
+  </article>
+</div>
+<div class="clearfix"></div>
+<div class="resultados" *ngFor="let dato of datos">
+  <div class="wrap">
+    <nz-page-header [nzGhost]="false">
+      <nz-page-header-title>{{dato.title}}</nz-page-header-title>
+      <nz-page-header-subtitle>{{dato.location}}</nz-page-header-subtitle>
+      <nz-page-header-content>
+        <nz-descriptions [nzColumn]="3">
+          <nz-descriptions-item nzTitle="Compañía" [nzSpan]="1">{{dato.company}}</nz-descriptions-item>
+          <nz-descriptions-item nzTitle="Tipo" [nzSpan]="1"><a>{{dato.type}}</a></nz-descriptions-item>
+          <nz-descriptions-item nzTitle="Fecha" [nzSpan]="1">{{dato.created_at}}</nz-descriptions-item>
+          <nz-descriptions-item nzTitle="url" [nzSpan]="2">
+            {{dato.url}}
+          </nz-descriptions-item>
+        </nz-descriptions>
+      </nz-page-header-content>
+    </nz-page-header>
+  </div>
+</div>
