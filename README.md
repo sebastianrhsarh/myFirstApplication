@@ -1,20 +1,40 @@
-## `Instrucciones:`
+# Trainee Developer Test
 
-Para visualizar y utilizar la página web de búsqueda de trabajos primeramente se deben obtener los archivos de la rama. Para ello es necesario destinar una carpeta donde guardar el repositorio, cuando ya se destine una carpeta y estemos dentro de esa carpeta(Terminal: cd/NombreCarpeta), vamos a nuestro terminal e ingresamos "git clone git@gitlab.com:parleycl/rockstart/postulantes/postulacion-sebasti-n-riquelme.git", posteriormente entramos a la carpeta descargada con el comando "cd postulacion-sebasti-n-riquelme.git". Ya dentro de esa carpeta a través del terminal (cd NombreCarpeta/postulacion-sebasti-n-riquelme) se colocan los siguientes dos comandos "git fetch" y "git checkout Sebastian", ahí se obtendrán todos los archivos solicitados de la rama Sebastian.
+Este es un test pensado para demostrar las habilidades de los candidatos para integrar el Área de Ingeniería de Rockstart. Esta prueba esta pensada para desarrolladores trainee.
 
-**Requisitos** [Es necesario tener instalado npm(el cual se instala en el terminal con el comando "npm install") y también se debe tener instalado angular CLI par iniciar el servidor local, éste se instala con el siguiente comando en el terminal "npm install -g @angular/cli".
+# `Problema 1. Teórico`
 
-Ya teniendo el repositorio con los archivos y también el angular CLI junto con npm podemos continuar.
+Una empresa de arriendo de automóviles ha crecido lo suficiente como para iniciar un proyecto de automatización de operaciones. Para estos fines, ha elaborado un documento de requerimientos, del cual se desprenden los siguiente datos necesarios para el diseño de la base de datos.
 
-Dentro de nuestra carpeta donde tenemos todos nuestros archivos debemos entrar a la carpeta "trabajo" generada con angular, por lo que nuestra ruta sería de momento: cd NombreCarpeta/postulacion-sebasti-n-riquelme/trabajo. Luego de estar dentro de "trabajo" podemos ingresar un "ng-serve" que comenzará a compilar y terminará por habilitarnos nuestro servidor local, por lo que proseguimos a ingresar en cualquiera de nuestros navegadores "localhost:4200" y podremos finalmente visualizar nuestra página.
+* Se  dispone de un parque de vehículos, entre automóviles, camionetas, jeeps y station wagons.
+* Cada vehículo se identifica por su patente y se conoce su marca, modelo y año.
+* Se dispone de un grupo de choferes, los que pueden o no ser contratados junto con el arriendo de un automóvil.
+* Existe una cierta cantidad de clientes con los que se han celebrado convenios,  Estos clientes simplemente llevan los automóviles que necesitan, pagando contra factura a fines de mes.
+* Los clientes sin convenio pueden arrendar automóviles pero deben dejar una garantía monetaria.
 
-Ahora, ¿Cómo se utiliza?
+## Modelo de datos (Modelo Relacional)
 
-1.- En el primer recuadro se debe ingresar una descripción del trabajo que se desea obtener [Por ejemplo: Java]
-2.- En el segundo recuadro se ingresa el lugar del trabajo [Por ejemplo: San Francisco]
-3.- Se puede seleccionar si se desea que sea un trabajo "Full Time".
-4.- Se apreta el botón "Buscar"
-5.- Para visualizar nuestros resultados debemos ir a opciones de nuestro navegador/Más Herramientas/Herramientos del desarrollador o también click derecho e "inspeccionar elemento" y nos dirigimos a nuestra consola, donde se podrán visualizar nuestros resultados.
+Realice un modelo relacional que utilizaría para resolver este problema con sus respectivos campos, llaves y asociaciones. Intente hacer el modelo lo más robusto posible.
+
+El propósito de este problema es que usted sea capaz de desprender un modelo relacional de requerimientos dados por un cliente no experto en este tema, en donde las entidades no necesariamente están explicitas en el documento, esto le da la facultad de extenderse del enunciado pero no salirse del alcance.
+
+# `Problema 2. Practico`
+
+Desarrollar una aplicación web que permite buscar trabajos listados en la API de [GitHub Jobs](https://jobs.github.com/api). El link te llevara a la documentación de esta API, en donde te explican cómo se utiliza, que parámetros requiere para realizar la búsqueda y como tiene que ser el formato de la petición. En esta instancia vamos a excluir el uso de 'longitud' y 'latitud'.
+A nivel de template, al momento de hacer la consulta es necesario que existan los inputs adecuados para los tipo de parámetros que la API recibe, además al momento de ingresar a un trabajo listado, es necesario que se desplieguen todos los campos que trae el json, inclusive el id.
+También es necesario un buen nivel de UI/UX al momento de utilizar esta aplicación, está permitido el uso de librerias de diseño como lo es [AntDesing](https://ng.ant.design/docs/introduce/en), [Angular Material](https://material.angular.io/) o [Bootstrap](https://ng-bootstrap.github.io/#/home).
+
+## `Instrucciones generales`
+
+Crear un branch a partir de la rama master con tu nombre y apellido, por ejemplo **john-doe.**
+
+1. Se debe utilizar Docker para el despliegue de la aplicación.
+2. Para el desarrollo de la solución se deben ocupar el framework Angular.
+3. Se debe sobreescribir este README.md con las instrucciones para poder probar la aplicación.
+4. Se debe efectuar una metodología para abordar el proyecto a nivel de repositorio, y efectuar commits y push con regularidad.
+5. Se debe describir brevemente en un archivo md cuál fue el planteamiento de la solución y la motivación para postular al cargo.
+
+**Nota: El uso de buenas prácticas de codificación siempre es bienvenido.**
 
 
-
+**Éxito**
